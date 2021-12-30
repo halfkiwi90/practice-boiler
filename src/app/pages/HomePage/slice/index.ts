@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Counter } from './type';
+import { Counter } from './types';
 import { useInjectReducer } from 'redux-injectors';
 
 const initialState: Counter = { amount: 1, value: 0 };

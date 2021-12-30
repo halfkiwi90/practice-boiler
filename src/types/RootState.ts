@@ -1,5 +1,6 @@
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
-import { Counter } from '../app/pages/HomePage/slice/type';
+import { Counter } from '../app/pages/HomePage/slice/types';
+import { PostState } from 'app/pages/BlogPage/slice/types';
 
 /* 
   Because the redux-injectors injects your reducers asynchronously somewhere in your code
@@ -8,4 +9,5 @@ import { Counter } from '../app/pages/HomePage/slice/type';
 export interface RootState {
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
   counter: Counter;
+  post: PostState;
 }
